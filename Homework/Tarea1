@@ -1,0 +1,54 @@
+# Comandos Principales de SQL
+
+SQL (Structured Query Language) es un lenguaje de programación utilizado para gestionar y manipular bases de datos relacionales. A continuación, se presentan los comandos principales de SQL divididos por categorías, junto con ejemplos de su aplicación.
+
+## DDL (Data Definition Language)
+
+- **CREATE**: Utilizado para crear una nueva tabla o base de datos.
+
+    ```sql
+    CREATE TABLE estudiantes (
+        id INT PRIMARY KEY,
+        nombre VARCHAR(100),
+        edad INT
+    );
+    ```
+
+- **ALTER**: Modifica la estructura de una tabla existente, como añadir una columna nueva.
+
+    ```sql
+    ALTER TABLE estudiantes ADD email VARCHAR(100);
+    ```
+
+- **DROP**: Elimina tablas o bases de datos completas.
+
+    ```sql
+    DROP TABLE estudiantes;
+    ```
+
+## DML (Data Manipulation Language)
+
+- **SELECT**: Selecciona datos de una base de datos.
+
+    ```sql
+    SELECT nombre, edad FROM estudiantes WHERE edad > 18;
+    ```
+
+- **INSERT**: Inserta datos en una tabla.
+
+    ```sql
+    INSERT INTO estudiantes (id, nombre, edad) VALUES (1, 'Juan', 20);
+    ```
+
+- **UPDATE**: Actualiza datos en una tabla.
+
+    ```sql
+    UPDATE estudiantes SET edad = 21 WHERE id = 1;
+    ```
+
+- **DELETE**: Elimina datos de una tabla.
+
+    ```sql
+    DELETE FROM estudiantes WHERE id = 1;
+    ```
+
